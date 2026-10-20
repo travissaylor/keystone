@@ -1,1 +1,13 @@
 .DS_Store
+
+# Xcode / SwiftPM build artifacts
+.build/
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+.swiftpm/
+*.xcresult
+
+# Machine-local constants (phase 2 home coordinates); never committed
+Keystone/Local/
