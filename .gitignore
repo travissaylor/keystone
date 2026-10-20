@@ -11,3 +11,6 @@ xcuserdata/
 
 # Machine-local constants (phase 2 home coordinates); never committed
 Keystone/Local/
+
+# Claude Code session worktrees
+.claude/worktrees/
