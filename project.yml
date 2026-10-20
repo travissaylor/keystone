@@ -1,0 +1,90 @@
+name: Keystone
+
+options:
+  bundleIdPrefix: com.travissaylor.keystone
+  deploymentTarget:
+    iOS: "26.0"
+  createIntermediateGroups: true
+
+packages:
+  HabitCore:
+    path: HabitCore
+
+# Sources are synced folders, so files later units add under Keystone/,
+# KeystoneWidget/ or Shared/ are picked up without regenerating.
+#
+# Shared/ is listed as a syncedFolder in both targets. XcodeGen (2.45.3+)
+# dedupes a synced folder referenced by several targets into one root group
+# and adds it to each target's file-system-synchronized groups, so
+# Shared/Persistence compiles into the app and the widget from one folder.
+targets:
+  Keystone:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: Keystone
+        type: syncedFolder
+      - path: Shared
+        type: syncedFolder
+    dependencies:
+      - package: HabitCore
+        product: HabitCore
+      - target: KeystoneWidget
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travissaylor.keystone
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        # Generated Info.plist, merged with Keystone/Resources/Info.plist,
+        # which only carries UIBackgroundModes (no INFOPLIST_KEY_ for it).
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_FILE: Keystone/Resources/Info.plist
+        INFOPLIST_KEY_CFBundleDisplayName: Keystone
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
+        INFOPLIST_KEY_NSHealthShareUsageDescription: "Keystone reads your ended Watch workouts so a gym visit logs itself."
+        SWIFT_VERSION: "6.0"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+        SWIFT_EMIT_LOC_STRINGS: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 5XJHN897H7
+        CODE_SIGN_ENTITLEMENTS: Keystone/Resources/Keystone.entitlements
+        TARGETED_DEVICE_FAMILY: "1"
+    scheme:
+      testTargets: []
+
+  KeystoneWidget:
+    type: app-extension
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: KeystoneWidget
+        type: syncedFolder
+        excludes:
+          - "Info.plist"
+      - path: Shared
+        type: syncedFolder
+    dependencies:
+      - package: HabitCore
+        product: HabitCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.travissaylor.keystone.KeystoneWidget
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: KeystoneWidget/Info.plist
+        SWIFT_VERSION: "6.0"
+        SWIFT_DEFAULT_ACTOR_ISOLATION: MainActor
+        SWIFT_APPROACHABLE_CONCURRENCY: YES
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 5XJHN897H7
+        CODE_SIGN_ENTITLEMENTS: KeystoneWidget/KeystoneWidget.entitlements
+        TARGETED_DEVICE_FAMILY: "1"
+        SKIP_INSTALL: YES

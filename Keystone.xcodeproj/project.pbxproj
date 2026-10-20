@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F0D71EEDDD706AF18AF6DDC /* HabitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 35BC7508E6DDA7C842B0D9CF /* HabitCore */; };
+		C85BDE00DDD43CD04D39FEA9 /* HabitCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4ACD90D5B41FF38CD5F34B10 /* HabitCore */; };
+		F4E7F360A9782448536CBF26 /* KeystoneWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 47CB18A76A0A67B1F7050709 /* KeystoneWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC143F8E6787C9E5BD8A4368 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8E1A093BE8571EC653A7745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525A0C836663C8B4DE458EFD;
+			remoteInfo = KeystoneWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CDE15993101095DE06D421C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F4E7F360A9782448536CBF26 /* KeystoneWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		19DE3CB88B97393D3DAC5C85 /* HabitCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HabitCore; path = HabitCore; sourceTree = SOURCE_ROOT; };
+		47CB18A76A0A67B1F7050709 /* KeystoneWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = KeystoneWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		77B0A7555C8E7C7FF11461F6 /* Keystone.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Keystone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1057B874AEAECF490428F9CE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 525A0C836663C8B4DE458EFD /* KeystoneWidget */;
+		};
+		1E2143A700463E4256A527CE /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Info.plist,
+			);
+			target = 8A8049917E58ECEE0CF53BDB /* Keystone */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6C2601E52A661ACA15039EEC /* KeystoneWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1057B874AEAECF490428F9CE /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = KeystoneWidget;
+			sourceTree = "<group>";
+		};
+		7245CD0F7AB0D5ACF6B5DA94 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9D6ACEAE6402B5E30D7EBAF9 /* Keystone */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1E2143A700463E4256A527CE /* PBXFileSystemSynchronizedBuildFileExceptionSet */,
+			);
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Keystone;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6037168D6A14470AA1183578 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0D71EEDDD706AF18AF6DDC /* HabitCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B656553D705B43AA48B28A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85BDE00DDD43CD04D39FEA9 /* HabitCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		726D1D92C33D08E5001CEEA9 = {
+			isa = PBXGroup;
+			children = (
+				9D6ACEAE6402B5E30D7EBAF9 /* Keystone */,
+				6C2601E52A661ACA15039EEC /* KeystoneWidget */,
+				C64046934872194F394FEB4C /* Packages */,
+				7245CD0F7AB0D5ACF6B5DA94 /* Shared */,
+				D9307BEEF6872F33E4A0541C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C64046934872194F394FEB4C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				19DE3CB88B97393D3DAC5C85 /* HabitCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		D9307BEEF6872F33E4A0541C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77B0A7555C8E7C7FF11461F6 /* Keystone.app */,
+				47CB18A76A0A67B1F7050709 /* KeystoneWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525A0C836663C8B4DE458EFD /* KeystoneWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39772E14231570E8D236B45D /* Build configuration list for PBXNativeTarget "KeystoneWidget" */;
+			buildPhases = (
+				F70B966255E9BFDA1B8175D0 /* Sources */,
+				960BF03844E4C21B0ABA94D7 /* Resources */,
+				C2B656553D705B43AA48B28A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6C2601E52A661ACA15039EEC /* KeystoneWidget */,
+				7245CD0F7AB0D5ACF6B5DA94 /* Shared */,
+			);
+			name = KeystoneWidget;
+			packageProductDependencies = (
+				4ACD90D5B41FF38CD5F34B10 /* HabitCore */,
+			);
+			productName = KeystoneWidget;
+			productReference = 47CB18A76A0A67B1F7050709 /* KeystoneWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		8A8049917E58ECEE0CF53BDB /* Keystone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70620091C74D746665014A02 /* Build configuration list for PBXNativeTarget "Keystone" */;
+			buildPhases = (
+				6431CB0ECB2135F9E03F8267 /* Sources */,
+				E64B9BF2FFFC288E3F75667B /* Resources */,
+				6037168D6A14470AA1183578 /* Frameworks */,
+				8CDE15993101095DE06D421C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F4662F1EE457E5E33C1098 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9D6ACEAE6402B5E30D7EBAF9 /* Keystone */,
+				7245CD0F7AB0D5ACF6B5DA94 /* Shared */,
+			);
+			name = Keystone;
+			packageProductDependencies = (
+				35BC7508E6DDA7C842B0D9CF /* HabitCore */,
+			);
+			productName = Keystone;
+			productReference = 77B0A7555C8E7C7FF11461F6 /* Keystone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8E1A093BE8571EC653A7745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					525A0C836663C8B4DE458EFD = {
+						DevelopmentTeam = 5XJHN897H7;
+						ProvisioningStyle = Automatic;
+					};
+					8A8049917E58ECEE0CF53BDB = {
+						DevelopmentTeam = 5XJHN897H7;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F8775539F04DC3B9387B9C7C /* Build configuration list for PBXProject "Keystone" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 726D1D92C33D08E5001CEEA9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D3AB44C3FEFF085CECC2E49D /* XCLocalSwiftPackageReference "HabitCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D9307BEEF6872F33E4A0541C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A8049917E58ECEE0CF53BDB /* Keystone */,
+				525A0C836663C8B4DE458EFD /* KeystoneWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		960BF03844E4C21B0ABA94D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E64B9BF2FFFC288E3F75667B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6431CB0ECB2135F9E03F8267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F70B966255E9BFDA1B8175D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F4662F1EE457E5E33C1098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525A0C836663C8B4DE458EFD /* KeystoneWidget */;
+			targetProxy = FC143F8E6787C9E5BD8A4368 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5FE15F7F28E69007BE25A420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KeystoneWidget/KeystoneWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XJHN897H7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeystoneWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travissaylor.keystone.KeystoneWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6506FD12EBB02161350C449D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Keystone/Resources/Keystone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XJHN897H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keystone/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keystone;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Keystone reads your ended Watch workouts so a gym visit logs itself.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travissaylor.keystone;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A7791484757BAE8E1D6DFCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Keystone/Resources/Keystone.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XJHN897H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Keystone/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Keystone;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Keystone reads your ended Watch workouts so a gym visit logs itself.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travissaylor.keystone;
+				SDKROOT = iphoneos;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C042120C4083BF58BFE9FE1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = KeystoneWidget/KeystoneWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5XJHN897H7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeystoneWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.travissaylor.keystone.KeystoneWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D3A221675886637C4DDDA314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1F1E04B0F8536F17CCD734E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39772E14231570E8D236B45D /* Build configuration list for PBXNativeTarget "KeystoneWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C042120C4083BF58BFE9FE1E /* Debug */,
+				5FE15F7F28E69007BE25A420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70620091C74D746665014A02 /* Build configuration list for PBXNativeTarget "Keystone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7791484757BAE8E1D6DFCAB /* Debug */,
+				6506FD12EBB02161350C449D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F8775539F04DC3B9387B9C7C /* Build configuration list for PBXProject "Keystone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F1E04B0F8536F17CCD734E /* Debug */,
+				D3A221675886637C4DDDA314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D3AB44C3FEFF085CECC2E49D /* XCLocalSwiftPackageReference "HabitCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = HabitCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35BC7508E6DDA7C842B0D9CF /* HabitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HabitCore;
+		};
+		4ACD90D5B41FF38CD5F34B10 /* HabitCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HabitCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A8E1A093BE8571EC653A7745 /* Project object */;
+}
