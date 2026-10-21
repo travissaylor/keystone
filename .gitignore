@@ -14,3 +14,6 @@ Keystone/Local/
 
 # Claude Code session worktrees
 .claude/worktrees/
+
+# App icon exploration renders; the chosen icon lives in the asset catalog
+Scripts/icon-candidates/
