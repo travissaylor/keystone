@@ -1,5 +1,7 @@
 import SwiftData
 import SwiftUI
+import UserNotifications
+import WidgetKit
 
 @main
 struct KeystoneApp: App {
@@ -8,6 +10,8 @@ struct KeystoneApp: App {
     private let container: ModelContainer
     @State private var store: HabitStore
     @State private var workoutObserver: WorkoutObserver
+    @State private var notificationService: NotificationService
+    private let notificationDelegate: NotificationDelegate
 
     init() {
         // The main app process is the only one that syncs with CloudKit; the
@@ -30,6 +34,19 @@ struct KeystoneApp: App {
         _workoutObserver = State(initialValue: workoutObserver)
 
         // Services start here.
+        let notificationService = NotificationService()
+        _notificationService = State(initialValue: notificationService)
+        let notificationDelegate = NotificationDelegate(store: store)
+        self.notificationDelegate = notificationDelegate
+        // Set before launch finishes so background action launches are handled.
+        UNUserNotificationCenter.current().delegate = notificationDelegate
+        store.onLogChanged = { [notificationService, weak store] log in
+            guard let store else { return }
+            notificationService.rebuild(with: log, now: store.now())
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+        notificationService.start()
+        notificationService.rebuild(with: store.log, now: store.now())
         workoutObserver.start()
     }
 
