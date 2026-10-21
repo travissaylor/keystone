@@ -74,7 +74,7 @@ public enum Schedule {
     // MARK: Words
 
     /// The user's own line about why he trains, shown on hard days.
-    public static let reasonLine = "[Owner: write your one line about why you train here.]"
+    public static let reasonLine = "I love the process, and this morning is part of it."
 }
 
 /// What fits in the gym minutes available.
