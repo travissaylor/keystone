@@ -7,6 +7,7 @@ struct KeystoneApp: App {
 
     private let container: ModelContainer
     @State private var store: HabitStore
+    @State private var workoutObserver: WorkoutObserver
 
     init() {
         // The main app process is the only one that syncs with CloudKit; the
@@ -25,7 +26,11 @@ struct KeystoneApp: App {
         let store = HabitStore(context: container.mainContext)
         _store = State(initialValue: store)
 
+        let workoutObserver = WorkoutObserver(store: store)
+        _workoutObserver = State(initialValue: workoutObserver)
+
         // Services start here.
+        workoutObserver.start()
     }
 
     var body: some Scene {
@@ -39,6 +44,7 @@ struct KeystoneApp: App {
             // app was in the background, and roll the day over if needed.
             if newPhase == .active {
                 store.reload()
+                workoutObserver.refresh()
             }
         }
     }
